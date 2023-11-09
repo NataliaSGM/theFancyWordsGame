@@ -1,0 +1,88 @@
+#root { 
+  flex-grow: 1;
+  padding: 2rem;
+  text-align: center;
+  background-color:#fed39f;
+  width: 100%;
+  
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.refreshButton{
+  margin: 2rem 4rem;
+
+}
+.BoxGrid{
+  width: 550px;
+  height: 550px;
+  border: 1px;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(4, 1fr); 
+  font-size: large;
+  
+}
+
+.BoxItem { 
+  display: grid;
+  width: 100%;
+  height: 100%; 
+  background-color:#e79a58; 
+  padding: 50px 0;
+  border: 1px solid #166678;
+  text-align: center;
+  color: #166678;
+  border-radius: 3px
+}
+
+.anotherButton{  
+  margin-top: 1rem;
+}
+
+.gameTitle{
+ color: #166678; 
+ background-color: #e79a58;
+}
+
+.timeLeft{  
+  margin: 0 1.5rem;
+  height: 8rem;
+  color:#166678;  
+}
+
+.counter{
+  color: #e68a0b;
+}
+
+.congrats{  
+  height: 3rem;
+  align-items: center;
+  color: #2b4450;
+  /* margin-top: 1rem; */
+}
+
+.meaning{  
+  padding: 1rem 0;
+  border: 1px solid #166678;
+  text-align: center;
+  justify-content: center;
+    
+}
+
+.meaningCard{
+  width: 30rem ;
+  height: 10rem;
+  margin: 0 9rem;
+}
+
+.firstRow{
+  display: 'flex';
+  /* align-items: center; */
+  justify-content: center; 
+  /* padding-top: 1rem  */
+ }
+
