@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import termsData from './terms';
-import { Container, Row, Col, Button, Stack, Navbar, Card } from 'react-bootstrap';
-;
+import { Container, Row, Col, Button, Stack, Card, Image } from 'react-bootstrap';
+
 
 
 
@@ -77,7 +77,9 @@ const congrats = () => {
 
 
   return (
-    <>  
+    <>    
+      <Image src='/images/memeLord.jpg' roundedCircle/> 
+    
     <Container className='gameTitle'>
       <h1>The Fancy Words Game</h1>
     </Container>         
