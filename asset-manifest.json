@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/the-fancy-words-game/static/css/main.37f921fe.css",
-    "main.js": "/the-fancy-words-game/static/js/main.85d74337.js",
-    "index.html": "/the-fancy-words-game/index.html",
-    "main.37f921fe.css.map": "/the-fancy-words-game/static/css/main.37f921fe.css.map",
-    "main.85d74337.js.map": "/the-fancy-words-game/static/js/main.85d74337.js.map"
+    "main.css": "/theFancyWordsGame/static/css/main.37f921fe.css",
+    "main.js": "/theFancyWordsGame/static/js/main.85d74337.js",
+    "index.html": "/theFancyWordsGame/index.html",
+    "main.37f921fe.css.map": "/theFancyWordsGame/static/css/main.37f921fe.css.map",
+    "main.85d74337.js.map": "/theFancyWordsGame/static/js/main.85d74337.js.map"
   },
   "entrypoints": [
     "static/css/main.37f921fe.css",
