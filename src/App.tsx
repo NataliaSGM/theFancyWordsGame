@@ -84,7 +84,7 @@ const congrats = () => {
     </Container>         
     <Container className='mt-5 '>        
       <Row >
-        <Col className='firstCol' xs={12} md={6}>
+        <Col className='firstCol' xs={12} lg={6}>
           <Stack gap={3} className='text-center'>
           <Container className="timeLeft"><h3>{`Complete 16 points by matching the meaning to one of the fancy words in the grid. You have ${seconds} seconds before you lose your points and the words change order.`}</h3></Container>
           <Container className="counter p-1"><h1>{counter}</h1></Container>
@@ -96,7 +96,7 @@ const congrats = () => {
           </Stack> 
           <Button variant="light" className='anotherButton' onClick={randomMeaning}>Try another definition</Button>      
         </Col>        
-        <Col className='secondCol' xs={12} md={6}>
+        <Col className='secondCol' xs={12}  lg={6}>
         <Container className="congrats">
             <Container >{congrats()}</Container>
         </Container>

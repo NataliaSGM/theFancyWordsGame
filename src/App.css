@@ -8,6 +8,7 @@
   --color-secondary: #D2691E;
   --color-grey-1: #F0FFFF;  
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
 }
 
 @media (max-width: 576px) {
@@ -32,7 +33,7 @@
   display: grid;
   gap: 1px;
   grid-template-columns: repeat(4, 1fr); 
-  font-size: x-large;  
+  font-size: large;  
   padding-bottom: 2rem;
 }
 
@@ -63,10 +64,12 @@
   width: 6rem;
   height: 8rem;
   color:var(--color-grey-1);  
+
 }
 
 .counter{
   color: var(--color-secondary);
+  margin-top: 2rem;
 }
 
 .congrats{  
