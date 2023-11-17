@@ -24,7 +24,7 @@ const App: React.FC = () => {
       setFirstClick(true);
       setCounter(counter + 1)
       if (counter === 15) {              
-        window.alert('Youve won!! Play again!');
+        window.alert("You've won!! Play again!");
         setCounter(0)        
       }
     } else {
@@ -67,7 +67,7 @@ const App: React.FC = () => {
 
 const congrats = () => {  
   if (firstClick && isMatch) {   
-    return <h3>Fantastic! KeepGoing!</h3>
+    return <h3>Fantastic! Keep Going!</h3>
   } else if (firstClick && !isMatch) {
     return <h3>Oops, try again</h3>
   } else {
@@ -78,45 +78,51 @@ const congrats = () => {
 
   return (
     <>    
-      <Image src='/images/memeLord.jpg' roundedCircle/> 
-    
+      <Image src='/images/memeLord.jpg' roundedCircle/>     
     <Container className='gameTitle'>
       <h1>The Fancy Words Game</h1>
     </Container>         
     <Container className='mt-5 '>        
-      <Row className='firstRow'>
-        <Col >
+      <Row >
+        <Col className='firstCol' xs={12} md={6}>
           <Stack gap={3} className='text-center'>
-          <div className="timeLeft p-1"><h3>{`Complete 16 points by matching the meaning to one of the fancy words in the grid. You have ${seconds} seconds before you lose your points and the words change order.`}</h3></div>
-          <div className="counter p-1"><h1>{counter}</h1></div>
-          <div className='meaningCard'>
+          <Container className="timeLeft"><h3>{`Complete 16 points by matching the meaning to one of the fancy words in the grid. You have ${seconds} seconds before you lose your points and the words change order.`}</h3></Container>
+          <Container className="counter p-1"><h1>{counter}</h1></Container>
+          <Container className='meaningCard'>
             <Card className="meaning">
             <Card.Body><h2>{meaning}</h2></Card.Body>
           </Card>
-          </div>                                 
+          </Container>                                 
           </Stack> 
           <Button variant="light" className='anotherButton' onClick={randomMeaning}>Try another definition</Button>      
-        </Col>
-        </Row>
-        <Row>
-        <Col className='secondRow'>
-        <div className="congrats">
-            <div >{congrats()}</div>
-        </div>
-        <div className="BoxGrid" >
+        </Col>        
+        <Col className='secondCol' xs={12} md={6}>
+        <Container className="congrats">
+            <Container >{congrats()}</Container>
+        </Container>
+        <Container className="BoxGrid">
           {selectedTerms.map((term, index) => (
-            <div
+            <Container
               key={index}
               className='BoxItem'            
               onClick={() => matchWordToMeaning(index)}
             >
               {term.word}
-            </div>
+            </Container>
           ))}
-        </div>         
+        </Container>         
         </Col>     
-        </Row>
+        </Row>        
     </Container>
+    <footer className="footer">
+      <Container className='footer'>
+        <Row>
+          <Col md={12}>
+            <p>Check out the GitHub repository for this project: <a href="https://github.com/NataliaSGM/theFancyWordsGame">Github</a></p>
+          </Col>
+        </Row>
+      </Container>
+    </footer>
     </>
   );
 };
